@@ -19,18 +19,27 @@ body {
 main {
     display: flex; 
     gap: 2rem;
+    /* border: 1px solid red; */
 }
 
 h1 {
     color: #E1E1E6;
     margin: 0;
     font-size: 24px;
+    transition: all .2s;
+}
+h1:hover {
+    cursor: pointer;
 }
 h2 {
     color: rgba(225, 225, 230, 0.65);
     font-size: 20px;
     font-weight: normal;
     margin: 0;
+    transition: all .2s;
+}
+h2:hover{
+    cursor: pointer;
 }
 
 .music-card {
@@ -40,15 +49,22 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    transition: all .2s;
 }
 
 .music-img {
     border-radius: 1rem;
     width: 19rem;
+
 }
 
-.music-title {
+.card-one .music-title {
     width: 190px;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 
@@ -56,11 +72,20 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: max-content;
+    height: 4rem;
     font-size: 28px;
     color: #E1E1E6;
+    text-align: center;
+    line-height: 0;
+    border-radius: 50%;
+    transition: background-color .3s;
 }
+button:active {
+    background-color: rgba(217, 217, 217, 0.2);
+    transition: all .05s;
+}
+
 
 .nav-buttons {
     display: flex;
@@ -80,6 +105,7 @@ button {
     background-color: rgba(217, 217, 217, 0.4);
     border-radius: 999px;
     overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 .time-now-bar {
@@ -87,19 +113,30 @@ button {
     height: 100%;
     background-color: #D9D9D9;
     border-radius: 999px;
+    /* border: 1px solid red; */
 }
 
 .duration-music-time {
     color: rgba(217, 217, 217, 0.4);
-    letter-spacing: .05rem;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 23px;
+}
+
+.duration-music-container {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .card-one {
     width: 26rem;
-    height: 50rem;
+    height: 48rem;
+    
 }
 
 .card-two {
@@ -107,9 +144,15 @@ button {
     height: 26rem;
 }
 
-.container-img-title {
+.card-two .music-title {
+    /* border: 1px solid red; */
+    width: 180px;
+}
+
+.card-two .container-img-title {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     width: 30rem;
     /* border: 1px solid red; */
 }
@@ -118,11 +161,6 @@ button {
     width: 8.4rem;
 }
 
-.music-title {
-    /* border: 1px solid red; */
-    text-align: center;
-    width: 100%;
-}
 
 .card-two .duration-music-container {
     width: 30rem;
@@ -130,4 +168,14 @@ button {
 
 .card-two .duration-music-container .time-bar {
     width: 100%;
+}
+
+.card-three {
+    height: 20rem;
+}
+
+.container-cards-two-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
