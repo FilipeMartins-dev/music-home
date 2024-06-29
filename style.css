@@ -49,13 +49,16 @@ h2:hover{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    transition: all .2s;
+    transition: all .15s linear;
+}
+.music-card:hover {
+    background-color: #33284d;
+    scale: 1.01;
 }
 
 .music-img {
     border-radius: 1rem;
     width: 19rem;
-
 }
 
 .card-one .music-title {
@@ -79,13 +82,12 @@ button {
     text-align: center;
     line-height: 0;
     border-radius: 50%;
-    transition: background-color .3s;
+    transition: background-color .7s;
 }
 button:active {
     background-color: rgba(217, 217, 217, 0.2);
     transition: all .05s;
 }
-
 
 .nav-buttons {
     display: flex;
@@ -106,6 +108,9 @@ button:active {
     border-radius: 999px;
     overflow: hidden;
     /* border: 1px solid red; */
+}
+.time-bar:hover {
+    cursor: pointer;
 }
 
 .time-now-bar {
