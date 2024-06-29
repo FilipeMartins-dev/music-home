@@ -18,6 +18,7 @@ body {
 
 main {
     display: flex; 
+    gap: 2rem;
 }
 
 h1 {
@@ -96,9 +97,37 @@ button {
     justify-content: space-between;
 }
 
-
-
 .card-one {
     width: 26rem;
     height: 50rem;
+}
+
+.card-two {
+    width: 35rem;
+    height: 26rem;
+}
+
+.container-img-title {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    /* border: 1px solid red; */
+}
+
+.card-two .music-img {
+    width: 8.4rem;
+}
+
+.music-title {
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 100%;
+}
+
+.card-two .duration-music-container {
+    width: 30rem;
+}
+
+.card-two .duration-music-container .time-bar {
+    width: 100%;
 }
