@@ -100,7 +100,7 @@ button:active {
 }
 
 .time-bar {
-    width: 19rem;
+    width: 100%;
     height: 6px;
     background-color: rgba(217, 217, 217, 0.4);
     border-radius: 999px;
